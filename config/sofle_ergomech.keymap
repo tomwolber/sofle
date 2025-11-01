@@ -17,7 +17,7 @@
 #define ADJUST 3
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 140
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -32,10 +32,11 @@
     };
 
     behaviors {
-        mouse_scroll: mouse_scroll {
-          compatible = "zmk,behavior-sensor-rotate";
-          #sensor-binding-cells = <0>;
-          bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>;
         };
     };
 
@@ -62,7 +63,7 @@
             >;
 
             // Mouse scroll
-            sensor-bindings = <&mouse_scroll>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         lower_layer {
