@@ -48,8 +48,8 @@ layers:
   - '['
   - ']'
   - _
-  - \
   - '|'
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
