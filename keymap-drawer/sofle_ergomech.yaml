@@ -145,7 +145,7 @@ layers:
   - ''
   - ''
   - ''
-  - EP TOG
+  - EP ON
   - RGB HUD
   - RGB HUI
   - RGB SAD
@@ -157,7 +157,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - EP OFF
   - RGB BRD
   - RGB BRI
   - ''
