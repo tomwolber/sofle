@@ -32,11 +32,17 @@
     };
 
     behaviors {
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <25>;
+            tap-ms = <18>;
+        };
+        scroll_up_down2: behavior_sensor_rotate_mouse_wheel2 {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <29>;
         };
     };
 
