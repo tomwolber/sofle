@@ -50,6 +50,8 @@
             hold-while-undecided-linger;
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 18 19 20 30 31 32 42 43 44 54 55 56 57 8 9 10 11 20 21 22 23 32 33 34 35 44 45 46 47 58>;
+            flavor = "tap-preferred";
+            retro-tap;
         };
     };
 
@@ -67,12 +69,12 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE   &kp N1    &kp N2    &kp N3     &kp N4             &kp N5   &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &none
-&kp ESC     &kp Q     &kp W     &kp E      &kp R              &kp T    &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB     &kp A     &kp S     &kp D      &F_CMD LEFT_GUI F  &kp G    &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z     &kp X     &kp C      &kp V              &kp B    &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER          &kp RET  &kp SPACE  &mo RAISE  &kp RCTRL  &kp RALT  &kp RGUI
-                                                                       &kp ENTER  &kp RIGHT  &kp UP     &kp LEFT  &kp DOWN
+&kp GRAVE   &kp N1                 &kp N2               &kp N3             &kp N4             &kp N5   &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &none
+&kp ESC     &kp Q                  &kp W                &kp E              &kp R              &kp T    &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB     &F_CMD LEFT_CONTROL S  &F_CMD LEFT_SHIFT A  &F_CMD LEFT_ALT D  &F_CMD LEFT_GUI F  &kp G    &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z                  &kp X                &kp C              &kp V              &kp B    &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp C_MUTE  &kp LGUI               &kp LALT             &kp LCTRL          &mo LOWER          &kp RET  &kp SPACE  &mo RAISE  &kp RCTRL  &kp RALT  &kp RGUI
+                                                                                                       &kp ENTER  &kp RIGHT  &kp UP     &kp LEFT  &kp DOWN
             >;
 
             sensor-bindings = <&mousescroll &inc_dec_kp PG_UP PG_DN>;
