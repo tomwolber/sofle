@@ -29,7 +29,7 @@ layers:
   - {t: S, h: LEFT CONTROL}
   - {t: A, h: LEFT SHIFT}
   - {t: D, h: LEFT ALT}
-  - {t: F, h: LEFT GUI}
+  - {t: B, h: LEFT GUI}
   - G
   - H
   - J
